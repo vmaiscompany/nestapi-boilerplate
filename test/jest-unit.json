@@ -1,0 +1,45 @@
+{
+  "moduleFileExtensions": ["js", "json", "ts"],
+  "rootDir": "..",
+  "testEnvironment": "node",
+  "testRegex": ".*\\.spec\\.ts$",
+  "transform": {
+    "^.+\\.(t|j)s$": "ts-jest"
+  },
+  "collectCoverageFrom": [
+    "src/**/*.ts",
+    "!src/main.ts",
+    "!src/prisma/**/*",
+    "!src/common/**/*",
+    "!src/app.service.ts",
+    "!src/health/**/*",
+    "!src/**/*.module.ts",
+    "!src/**/dtos/*.ts"
+  ],
+  "moduleNameMapper": {
+    "^src/(.*)$": "<rootDir>/src/$1"
+  },
+  "coverageDirectory": "coverage",
+  "coverageProvider": "v8",
+  "coverageReporters": ["text", "lcov", "html"],
+  "coverageThreshold": {
+    "global": {
+      "branches": 80,
+      "functions": 90,
+      "lines": 90,
+      "statements": 90
+    },
+    "src/users/users.service.ts": {
+      "branches": 90,
+      "functions": 100,
+      "lines": 100,
+      "statements": 100
+    },
+    "src/users/users.controller.ts": {
+      "branches": 70,
+      "functions": 100,
+      "lines": 100,
+      "statements": 100
+    }
+  }
+}
