@@ -20,6 +20,16 @@
 </p>
   <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
   [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+  
+## Guidelines
+Acesse o arquivo com as boas práticas de desenvolvimento:
+- [Development Guideline](guidelines/development.md)
+- [Hotfix Guideline](guidelines/hotfix.md)
+- [Staging Guideline](guidelines/staging.md)
+
+Template para descrição de pull request
+- [Pull Request Template](guidelines/pr-template.md)
+
 
 ## Description
 
